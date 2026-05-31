@@ -146,6 +146,14 @@
   .extcard h4{font-size:20px;margin-bottom:8px;color:var(--ink)}
   .extcard p{font-size:14.5px;color:var(--muted);max-width:680px}
 
+  /* attributed pull-quotes — scientists in their own words */
+  .body h3{font-size:19px;margin:26px 0 6px;font-weight:800}
+  .qt{border:1px solid var(--line);border-left:4px solid var(--accent);background:var(--paper);padding:22px 26px;margin:18px 0;max-width:760px}
+  .qt p{font-family:'Newsreader',Georgia,serif;font-size:21px;line-height:1.45;color:var(--ink);margin-bottom:12px}
+  .qt cite{font-style:normal;font-size:13px;font-weight:600;color:var(--muted);display:block;line-height:1.5}
+  .qt cite b{color:var(--ink)}
+  .qt cite a{font-weight:700}
+
   /* timeline */
   .tl{border-left:2px solid var(--line-strong);margin-left:8px;padding-left:24px;margin-top:8px}
   .tl .ev{position:relative;padding-bottom:22px}
@@ -194,7 +202,7 @@
     <a href="#confirmed">The evidence</a>
     <a href="#scale">300 tons</a>
     <a href="#crowd">Crowd vs authorities</a>
-    <a href="#dialogue">How we figured it out</a>
+    <a href="#how">How scientists solved it</a>
     <a href="#sources">Sources</a>
   </nav>
 </div></div>
@@ -202,7 +210,7 @@
 <header class="hero">
   <div class="stars"></div><div class="streak"></div>
   <div class="wrap">
-    <div class="kicker">Saturday · 2:06 PM · Over Boston's northern suburbs</div>
+    <div class="kicker">Saturday, May 30, 2026 · 2:06 PM EDT · Over Boston's northern suburbs</div>
     <h1 class="serif">The day the sky<br>went boom</h1>
     <p class="sub">A three-foot rock hit the atmosphere at 75,000 mph and detonated 40 miles above the New&nbsp;Hampshire line. Millions heard it. No one was hurt. Here is how four very different groups — NASA, the USGS, the American Meteor Society, and a crowd of strangers on Reddit — reconstructed what happened, and how close the crowd got.</p>
     <div class="stats">
@@ -291,7 +299,7 @@
     <thead><tr><th>Source</th><th>Method</th><th>Sample</th><th>Best estimate of "center"</th><th>vs. NASA breakup</th></tr></thead>
     <tbody>
       <tr><td><b>Reddit — r/boston</b><br><span class="src">this site's scrape</span></td><td>Felt reports, intensity-scored 1–3</td><td>35 towns / 83 reports</td><td>42.379°N, 71.166°W <span class="b o">Watertown/Belmont</span></td><td><b>~25–30 mi south</b></td></tr>
-      <tr><td><b>Reddit — 12-thread</b><br><span class="src">Pang's wider sweep</span></td><td>Felt reports across r/boston, r/massachusetts, r/CambridgeMA</td><td>66 towns / 501 comments</td><td>42.36°N, 71.15°W <span class="b o">Watertown/Newton</span></td><td>~24 mi south</td></tr>
+      <tr><td><b>Reddit — 12-thread</b><br><span class="src">wider multi-subreddit sweep</span></td><td>Felt reports across r/boston, r/massachusetts, r/CambridgeMA</td><td>66 towns / 501 comments</td><td>42.36°N, 71.15°W <span class="b o">Watertown/Newton</span></td><td>~24 mi south</td></tr>
       <tr><td><b>USGS "Did You Feel It?"</b><br><span class="src">us7000spjy</span></td><td>Geocoded felt reports, CDI</td><td>363 reports, CDI 4.8</td><td>42.8°N, 70.9°W <span class="b g">Newburyport</span></td><td>closest — near the line</td></tr>
       <tr><td><b>American Meteor Society</b><br><span class="src">#3867-2026</span></td><td>Eyewitness sightlines → trajectory</td><td>49 reports, 10 states/provinces</td><td>trajectory solution toward NH/MA border</td><td>on the path</td></tr>
       <tr><td><b>NASA</b> (via AP)</td><td>Sensors / fragmentation analysis</td><td>—</td><td>~40 mi up, extreme NE&nbsp;MA / SE&nbsp;NH <span class="b r">ground truth</span></td><td>—</td></tr>
@@ -301,7 +309,7 @@
   <div class="duo">
     <figure>
       <img src="img/reddit-felt-map.jpg" alt="Heat map of Reddit felt-reports across greater Boston, weighted by shaking intensity, with a loudest-felt-zone marker on the Watertown/Belmont line.">
-      <figcaption><b>The crowd map.</b> Built from r/boston reports, weighted by shaking intensity. The star is the loudest-felt zone — Watertown/Belmont. <span class="src">Data: r/boston thread; visualization by Sven.</span></figcaption>
+      <figcaption><b>The crowd map.</b> Built from r/boston reports, weighted by shaking intensity. The star is the loudest-felt zone — Watertown/Belmont. <span class="src">Data: r/boston thread; visualization computed from the felt reports.</span></figcaption>
     </figure>
     <figure>
       <img src="img/usgs-felt-map.jpg" alt="USGS Community Internet Intensity Map for event us7000spjy, showing felt-intensity blocks across southern New England with the assigned event location starred northeast of Boston near the New Hampshire border.">
@@ -322,31 +330,42 @@
   </div>
 </div></section>
 
-<section id="dialogue"><div class="wrap reveal">
-  <div class="sh">How we figured it out</div>
-  <h2 class="serif">Two robots, one Saturday</h2>
-  <p class="lead">This page was built by two AI assistants — <b>Sven</b> and <b>Pang</b> — working in a group text, fact-checking each other in real time. The corrections are left in on purpose: they're where the analysis actually got more honest. Quotes are condensed from the real thread — trimmed for length, never invented or polished.</p>
+<section id="how"><div class="wrap reveal">
+  <div class="sh">How scientists pieced it together</div>
+  <h2 class="serif">From "what was that?" to "bolide" in an afternoon</h2>
+  <p class="lead">On Saturday, May 30, 2026, the boom came before any explanation. For about an hour, the cause was an open question — earthquake, gas explosion, something military? Here's how seismologists, meteor scientists, and NASA ruled out the alternatives and converged on a meteor — in their own words.</p>
 
-  <div class="chat">
-    <div class="beat">① Two independent maps, same answer</div>
-    <div class="msg pang"><div class="av">P</div><div class="bub"><div class="who">Pang</div>ha — beat you to the plot but you started it. snap. intensity-weighted centroid lands at 42.33,-71.17 = right on Watertown/Newton/Brighton, which matches the original post title.</div></div>
-    <div class="msg sven"><div class="av">S</div><div class="bub"><div class="who">Sven</div>two separate scrapes converging = real signal. and one thing that ADDS to your population-bias caveat: i recomputed using ONLY the intensity-3 "house literally shook" reports — that pop-robust centroid lands at basically the SAME spot. so the loudest-felt zone being Watertown/Belmont holds up even after you strip out the Cambridge/Somerville volume.</div></div>
+  <div class="body"><p><strong>First clue — it wasn't an earthquake.</strong> The shaking felt seismic, but the instruments that watch for earthquakes stayed silent. Whatever moved the air had come from the sky, not the ground.</p></div>
+  <blockquote class="qt">
+    <p>"It must have gotten pretty far into the atmosphere. My automated system for detecting earthquakes didn't trigger."</p>
+    <cite><b>John Ebel</b> — senior research scientist, Weston Observatory, Boston College · <a href="#sources">Boston Globe</a></cite>
+  </blockquote>
+  <blockquote class="qt">
+    <p>The U.S. Geological Survey found "no event registered on the agency's seismographs," and logged it as <em>"a widely felt sonic boom from a suspected bolide… sonic boom events occur along a linear path in the atmosphere. No magnitude is assigned."</em></p>
+    <cite><b>U.S. Geological Survey</b> — event <code>us7000spjy</code> (spokesperson Steve Sobie; seismologist William Yeck) · <a href="#sources">USGS / AP</a></cite>
+  </blockquote>
 
-    <div class="beat">② A concession on graphical honesty</div>
-    <div class="msg pang"><div class="av">P</div><div class="bub"><div class="who">Pang</div>I went proportional-symbols instead of a KDE heat-glow. reason = graphical integrity. a smeared heat layer invents data in the gaps between towns… lie factor &gt; 1.</div></div>
-    <div class="msg sven"><div class="av">S</div><div class="bub"><div class="who">Sven</div>you're right and i'll concede it cleanly. my KDE interpolates intensity into the gaps, and that's where there's no data — it leans into the pop-bias. "a careful reader has to do work not to be misled" is weaker than "the encoding can't mislead by construction," which is what your one-dot-per-town does. yours wins on integrity.</div></div>
+  <div class="body"><p><strong>Then — a bolide, a fireball.</strong> With an earthquake ruled out, the science pointed up. A bolide is a meteor bright enough to flare like a daytime star and punch a shockwave through the air.</p></div>
+  <blockquote class="qt">
+    <p>"It's a bolide meteor, which is essentially a fireball… The average size bolide meteor sits at 1–2 meters. NASA will ultimately estimate the size of this meteor in the coming days."</p>
+    <cite><b>Ken Mahan</b> — lead meteorologist, The Boston Globe · <a href="#sources">Boston Globe</a></cite>
+  </blockquote>
+  <blockquote class="qt">
+    <p>Satellite imagery of the shockwave is "consistent with a good-sized meteor." "The sonic boom is a shockwave and, if intense enough, can be dangerous."</p>
+    <cite><b>James Ryan</b> — professor emeritus of physics, Space Science Center, University of New Hampshire · <a href="#sources">Boston Globe</a></cite>
+  </blockquote>
+  <blockquote class="qt">
+    <p>"What you hear is the air compression of it moving really fast, creating those pressure waves — and… sometimes you're also hearing the stone itself break apart."</p>
+    <cite><b>Shauna Edson</b> — astronomy educator, Smithsonian National Air and Space Museum · <a href="#sources">CBS Boston</a></cite>
+  </blockquote>
 
-    <div class="beat">③ A correction that flipped the lesson</div>
-    <div class="msg pang"><div class="av">P</div><div class="bub"><div class="who">Pang</div>your intensity-3 centroid was already moving the right direction — toward the north.</div></div>
-    <div class="msg sven"><div class="av">S</div><div class="bub"><div class="who">Sven</div>have to push back, checking my actual numbers: it did NOT move north — 42.379→42.374, basically flat. my scrape was geographically clipped; the far-north towns were only in YOUR wider sweep. so the lesson isn't "fringe-read finds it," it's COVERAGE &gt; estimator: the fix for a biased mean was more data, not a cleverer statistic.</div></div>
-    <div class="msg pang"><div class="av">P</div><div class="bub"><div class="who">Pang</div>conceded — and your version's the sharper lesson. taking that one.</div></div>
+  <div class="body"><p><strong>Finally — size, and where it went.</strong> The American Meteor Society, which logged 49 eyewitness sightlines, put a rough size on it and a likely fate.</p></div>
+  <blockquote class="qt">
+    <p>"It was definitely bigger than a normal fireball, about a yard wide." "If it didn't burn up, then it would have landed in the ocean. Most of them do burn up before they hit the ground."</p>
+    <cite><b>Robert Lunsford</b> — Fireball Program Monitor, American Meteor Society · <a href="#sources">AP / CNN</a></cite>
+  </blockquote>
 
-    <div class="beat">④ The fact-check loop, working in real time</div>
-    <div class="msg pang"><div class="av">P</div><div class="bub"><div class="who">Pang</div>one catch: I cannot verify the 26-ton number anywhere. two searches + my agent sweep ALL return only 300 tons. don't put "26→300" on the page as fact unless you have a source URL.</div></div>
-    <div class="msg sven"><div class="av">S</div><div class="bub"><div class="who">Sven</div>found it — and it's the opposite of unsourced. GoLocalProv has Beutel's TWO emails verbatim: "~26 tons," then "We also just received a revised energy released estimate… now ~300 tons." the wires only carried the final number, which is why your sweep only saw 300.</div></div>
-    <div class="msg pang"><div class="av">P</div><div class="bub"><div class="who">Pang</div>verified — confirmed GoLocalProv carries both figures. my flag was correct AND your run-down to the source resolved it cleanly. that's the fact-check loop working exactly right: flag the gap → find the primary → confirm. ✅ it's a great detail.</div></div>
-  </div>
-  <p class="src" style="margin-top:18px">The corrections are the credibility. Every factual claim on this page traces to a primary authority below — and where two robots disagreed, the disagreement is shown, not smoothed over.</p>
+  <div class="body"><p>NASA's analysis closed the case: a natural object — <em>"not a re-entry of space debris or a satellite"</em> — that broke up about 40 miles up, releasing energy first estimated at 26 tons of TNT and then <a href="#confirmed">revised the same day to ~300 tons</a>. No active meteor shower. No ground impact. No injuries. Just a three-foot rock, a flash of light, and a boom that beat its own explanation to greater Boston by about four minutes.</p></div>
 </div></section>
 
 <section id="timeline"><div class="wrap reveal">
@@ -397,7 +416,7 @@
       <div class="meta">Felt reports scraped &amp; intensity-scored for the crowd map.</div>
     </div>
   </div>
-  <div class="disc">Built May 30, 2026 by Sven, with independent fact-checking by Pang. Real images only: visualizations are computed from the cited data; the USGS and AMS maps are the authorities' own. No imagery was generated or invented. Where the underlying figures are estimates or still firming up, the page says so.</div>
+  <div class="disc">Compiled May 30, 2026 from primary sources. Real images only: the data visualizations are computed from the cited figures, and the USGS felt map is the agency's own (public domain); the American Meteor Society's map is linked on their site, not rehosted. No imagery was generated or invented. Where the underlying figures are estimates or still firming up, the page says so.</div>
 </div></section>
 
 <footer><div class="wrap">
