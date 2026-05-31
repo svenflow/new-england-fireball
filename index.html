@@ -162,16 +162,6 @@
   .tl .yr{font-weight:800;font-size:14.5px}
   .tl .ev p{font-size:14px;color:var(--muted);margin-top:2px}
 
-  /* dialogue */
-  .chat{margin-top:10px}
-  .msg{display:flex;gap:11px;margin-bottom:14px;align-items:flex-start}
-  .msg .av{flex:0 0 34px;width:34px;height:34px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:13px;color:#fff;margin-top:2px}
-  .msg.sven .av{background:#2b6cb0} .msg.pang .av{background:#c2410c}
-  .msg .bub{border:1px solid var(--line);background:var(--paper);padding:12px 15px;font-size:14.5px;max-width:760px}
-  .msg .who{font-size:11px;font-weight:800;letter-spacing:.04em;text-transform:uppercase;color:var(--muted);margin-bottom:4px}
-  .msg.sven .who{color:#2b6cb0} .msg.pang .who{color:#c2410c}
-  .beat{font-size:12px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--accent);margin:26px 0 12px}
-  .beat:first-child{margin-top:6px}
 
   /* sources */
   .srcs{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:1px;background:var(--line);border:1px solid var(--line)}
@@ -188,7 +178,6 @@
   .reveal.in{opacity:1;transform:none}
   @media(prefers-reduced-motion:reduce){.reveal{opacity:1;transform:none}}
   @media(max-width:480px){
-    .msg{gap:8px} .msg .av{flex:0 0 28px;width:28px;height:28px;font-size:11px} .msg .bub{font-size:13.5px;padding:10px 12px}
     .hero .wrap{padding:60px 20px 60px} .stats{margin-top:34px}
   }
 </style>
@@ -210,9 +199,9 @@
 <header class="hero">
   <div class="stars"></div><div class="streak"></div>
   <div class="wrap">
-    <div class="kicker">Saturday, May 30, 2026 · 2:06 PM EDT · Over Boston's northern suburbs</div>
+    <div class="kicker">Saturday, May 30, 2026 · 2:06 PM EDT · Over the Massachusetts–New Hampshire border</div>
     <h1 class="serif">The day the sky<br>went boom</h1>
-    <p class="sub">A three-foot rock hit the atmosphere at 75,000 mph and detonated 40 miles above the New&nbsp;Hampshire line. Millions heard it. No one was hurt. Here is how four very different groups — NASA, the USGS, the American Meteor Society, and a crowd of strangers on Reddit — reconstructed what happened, and how close the crowd got.</p>
+    <p class="sub">A rock the size of a yardstick hit the atmosphere at 75,000 mph and broke apart 40 miles above the New&nbsp;Hampshire line. It was heard across the Northeast. No one was hurt. Here is how four very different groups — NASA, the USGS, the American Meteor Society, and a crowd of strangers on Reddit — reconstructed what happened, and how close the crowd got.</p>
     <div class="stats">
       <div><div class="n">~<b>300</b> t</div><div class="l">TNT-equivalent</div></div>
       <div><div class="n"><b>40</b> mi</div><div class="l">Breakup altitude</div></div>
@@ -229,12 +218,12 @@
   <h2 class="serif">A meteor, not an explosion</h2>
   <p class="lead">At <strong>2:06 PM EDT on May 30, 2026</strong>, a natural object — not space debris or a satellite — entered the atmosphere over the New England coast and broke apart in the sky. The flash came first; the double boom and ground-shaking pressure wave reached people about four minutes later as the sound caught up.</p>
   <div class="body">
-    <p>The flash was seen at 2:06 PM. The double boom and ground-shaking pressure wave reached people <strong>about four minutes later — around 2:10–2:11 PM</strong> — as the sound caught up across the roughly 60-mile footprint (light is instant; sound from 40 miles up takes ~3–4 minutes to arrive). Reports poured in <strong>from Delaware to Montréal</strong> — people who heard a double boom, felt their houses shake, or caught a "shooting star in the daytime sky." Police switchboards lit up. For an hour, no one was sure whether it was an earthquake, a gas explosion, a sonic boom, or something military.</p>
-    <p>It was none of those. NASA, the U.S. Geological Survey, and the American Meteor Society independently converged on the same answer within hours: a small asteroid fragment — a <strong>bolide</strong> — that exploded high in the atmosphere. The U.S.G.S. seismographs recorded <strong>no earthquake</strong>; the shaking people felt was the airburst's pressure wave, not the ground.<sup class="s"><a href="#sources">1,2</a></sup></p>
+    <p>The flash was seen at 2:06 PM. The double boom and ground-shaking pressure wave reached people <strong>about four minutes later — around 2:10–2:11 PM</strong> — as the sound caught up across a roughly 60-mile zone of strong shaking around greater Boston (light is effectively instant; sound from 40 miles up takes ~3–5 minutes to reach the ground). The fireball was seen — and the boom heard, more faintly — far wider still: reports came in <strong>from Delaware to Montréal</strong>, people who heard a double boom, felt their houses shake, or caught a "shooting star in the daytime sky." Police switchboards lit up. For an hour, no one was sure whether it was an earthquake, a gas explosion, a sonic boom, or something military.</p>
+    <p>It was none of those. NASA, the U.S. Geological Survey, and the American Meteor Society independently converged on the same answer within hours: a small asteroid fragment — a <strong>bolide</strong> — that broke apart high in the atmosphere in an airburst. The U.S.G.S. seismographs recorded <strong>no earthquake</strong>; the shaking people felt was the airburst's pressure wave, not the ground.<sup class="s"><a href="#sources">1,2</a></sup></p>
   </div>
   <div class="verdict">
     <div class="vk">The verdict</div>
-    <p>A ~3-foot meteoroid detonated ~40 miles up over the Massachusetts–New&nbsp;Hampshire border, releasing energy equivalent to ~300 tons of TNT. It almost certainly did not reach the ground. Confirmed by NASA, the USGS (event <code>us7000spjy</code>), and the American Meteor Society (event <code>#3867-2026</code>).</p>
+    <p>A meteoroid — roughly three feet wide (an American Meteor Society estimate; NASA's official size is still pending) — broke apart ~40 miles up over the Massachusetts–New&nbsp;Hampshire border, releasing energy equivalent to ~300 tons of TNT. It most likely burned up; any surviving fragment would have fallen into the ocean, not on land. The fragmentation and energy are confirmed by NASA, the USGS (event <code>us7000spjy</code>), and the American Meteor Society (event <code>#3867-2026</code>).</p>
   </div>
 </div></section>
 
@@ -286,7 +275,7 @@
 
   <figure>
     <img src="img/altitude-diagram.png" alt="Geometry diagram showing the burst 40 miles up, with slant-distances to towns on the ground barely changing — 40 miles directly below versus 50 miles to a town 30 miles away.">
-    <figcaption><b>Why the height is the whole story.</b> Detonating ~40 miles up, the energy spreads across miles of open sky and dumps largely into light and heat. The same 300 tons at street level would level a city block. It also explains why the boom can't be triangulated: the slant-distance barely changes across the region (40 mi straight down vs. 50 mi to a town 30 mi away), so the sound arrives almost equally loud everywhere — there's no directional gradient to solve without millisecond timestamps. <span class="src">Diagram: first-principles geometry from the confirmed 40-mile altitude.</span></figcaption>
+    <figcaption><b>Why the height is the whole story.</b> Bursting ~40 miles up, the energy spreads across miles of open sky and dumps largely into light and heat. The same 300 tons at street level would level a city block. It also explains why the boom can't be triangulated: the slant-distance barely changes across the region (40 mi straight down vs. 50 mi to a town 30 mi away), so the sound arrives almost equally loud everywhere — there's no directional gradient to solve without millisecond timestamps. <span class="src">Diagram: first-principles geometry from the confirmed 40-mile altitude.</span></figcaption>
   </figure>
 </div></section>
 
@@ -326,7 +315,7 @@
   <div class="call good">
     <h3 class="serif">The crowd was wrong in exactly the predictable direction — and still close</h3>
     <p>Every felt-map lands on roughly the same axis, and the <strong>error points due north</strong>: the Reddit crowd-center sat ~25 miles <em>south</em> of the real breakup. That's not noise — it's the <strong>population gradient</strong>. Boston, Cambridge, and Somerville hold far more redditors than the rural towns near the NH line, so a report-weighted average gets dragged south by sheer headcount.</p>
-    <p>The tell is in the ordering: the <strong>USGS sample (363 reports, less Boston-skewed) landed closest</strong> to the truth at Newburyport; the Reddit samples (Boston-heavy) sat farthest south. More representative coverage → closer to the source. And since the burst was 40 miles <em>up</em>, a ~25-mile horizontal miss is smaller than the detonation altitude — about as close as "who heard it" can physically resolve without arrival-time timestamps.</p>
+    <p>The tell is in the ordering: the <strong>USGS sample (363 reports, less Boston-skewed) landed closest</strong> to the truth at Newburyport; the Reddit samples (Boston-heavy) sat farthest south. More representative coverage → closer to the source. And since the burst was 40 miles <em>up</em>, a ~25-mile horizontal miss is smaller than the burst altitude — about as close as "who heard it" can physically resolve without arrival-time timestamps.</p>
   </div>
 </div></section>
 
@@ -365,12 +354,12 @@
     <cite><b>Robert Lunsford</b> — Fireball Program Monitor, American Meteor Society · <a href="#sources">AP / CNN</a></cite>
   </blockquote>
 
-  <div class="body"><p>NASA's analysis closed the case: a natural object — <em>"not a re-entry of space debris or a satellite"</em> — that broke up about 40 miles up, releasing energy first estimated at 26 tons of TNT and then <a href="#confirmed">revised the same day to ~300 tons</a>. No active meteor shower. No ground impact. No injuries. Just a three-foot rock, a flash of light, and a boom that beat its own explanation to greater Boston by about four minutes.</p></div>
+  <div class="body"><p>NASA's analysis closed the case: a natural object — <em>"not a re-entry of space debris or a satellite"</em> — that broke up about 40 miles up, releasing energy first estimated at 26 tons of TNT and then <a href="#confirmed">revised the same day to ~300 tons</a>. No active meteor shower. No ground impact. No injuries. Just a roughly three-foot rock (an estimate), a flash of light, and a boom that arrived in greater Boston about four minutes behind it.</p></div>
 </div></section>
 
 <section id="timeline"><div class="wrap reveal">
   <div class="sh">Timeline</div>
-  <h2 class="serif">Ninety minutes from boom to confirmed</h2>
+  <h2 class="serif">From boom to bolide, in an afternoon</h2>
   <div class="tl">
     <div class="ev"><div class="yr">2:06 PM EDT</div><p>The fireball enters over New England at ~75,000 mph (NASA). The flash is seen as a daytime "shooting star."</p></div>
     <div class="ev"><div class="yr">~2:07 PM</div><p>First eyewitnesses — who <em>saw</em> the daytime fireball — report to the American Meteor Society (event #3867, logged 18:07&nbsp;UT = 2:07&nbsp;PM&nbsp;EDT).</p></div>
